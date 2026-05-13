@@ -288,6 +288,7 @@ rules:
       - pxruntimes/status
     verbs:
       - get
+      - list
       - patch
       - update
   - apiGroups:
