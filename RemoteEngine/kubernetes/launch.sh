@@ -473,6 +473,7 @@ rules:
       - pxremoteengines/status
     verbs:
       - get
+      - list
       - patch
       - update
   - apiGroups:
