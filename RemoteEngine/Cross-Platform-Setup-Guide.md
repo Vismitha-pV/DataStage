@@ -47,7 +47,7 @@ Gather the following before starting:
 | `REGISTRY` | Container image registry, e.g. `cp.icr.io/cp/cpd` |
 | `ENC_KEY` | Encryption key for secure communication |
 | `IVSPEC` | Encryption IV specification |
-| `DIGEST` | SHA256 digest of the image  |
+| `DIGEST` | SHA256 digest of the PX-RUNTIME image  |
 
 
 These are typically stored in a secrets file and sourced before running the script:
@@ -67,8 +67,8 @@ source ~/.dsengine_secrets
 
 export IBM_ENTITLEMENT_KEY=<your-entitlement-key>
 export APIKEY=<your-cp4d-or-ibmcloud-apikey>
-export REGISTRY=$REGISTRY
-export DIGEST=$DIGEST
+export REGISTRY="artifactory.example.com"
+export DIGEST=<sha256:1d0f615945b7784d187501c5eb74e4a63f07d0abedce1be43b48c5e646a54973>
 export ENC_KEY=<your-encryption-key>
 export IVSPEC=<your-iv-spec>
 
